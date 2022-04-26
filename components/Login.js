@@ -19,7 +19,7 @@ function Login() {
          <button 
          onClick={authenticate}
          className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse">
-           Login into the MetaVerse</button>
+           Connect with MetaMask</button>
        </div>
 
 
