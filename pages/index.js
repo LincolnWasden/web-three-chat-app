@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Login from "../components/Login"
 import Header from "../components/Header"
+import Messages from "../components/Messages"
 import { useMoralis } from "react-moralis";
 
 
@@ -22,11 +23,10 @@ export default function Home() {
         {/*Header*/}
         <Header />
         {/*Messages*/}
+        <Messages />
       </div>
      
-     
 
-      <button onClick={logout}>Logout</button>
     </div> 
   )
 }
