@@ -2,6 +2,7 @@ import { userInfo } from "os"
 import {useRef} from "react";
 import {ByMoralis, useMoralis, useMoralisQuery} from "react-moralis"
 import SendMessage from "../components/SendMessage"
+import Message from "../components/Message"
 
 const MINS_DURATION = 10000000000;
 
@@ -17,11 +18,12 @@ function Messages() {
             'creaetedAt', 
             new Date(Date.now() -1000 * 60 * MINS_DURATION)
             ),
-            [,
+            [],
             {
                 live: true,
-            }]
+            }
     );
+
   return (
     <div className="pb-56">
         <div className="my-5">
@@ -29,8 +31,11 @@ function Messages() {
         variant="dark"
          style={{marginLeft: "auto", marginRight: "auto"}}/>
         </div>
-        <div>
+        <div className="space-y-10 p-4">
         {/* <All Message/> */}
+        {data.map(message => (
+            <Message key={message.id} message={message}/>
+        ))}
         </div>
         <div className="flex justify-center">
             {/* <SendMessage/> */}
