@@ -11,7 +11,7 @@ function Login() {
         {/*CodeMyIdea Fam Logo */}
         <Image 
         className="object-cover rounded-full"
-        src="https://links.papareact.com/3pi"
+        src="https://ibb.co/6N0jyj6"
         height={200}
         width={200}
         />
