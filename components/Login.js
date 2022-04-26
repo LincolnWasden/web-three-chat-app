@@ -11,7 +11,7 @@ function Login() {
         {/*CodeMyIdea Fam Logo */}
         <Image 
         className="object-cover rounded-full"
-        src="https://ibb.co/6N0jyj6"
+        src="/woman.jpg"
         height={200}
         width={200}
         />
