@@ -1,5 +1,6 @@
 import {useMoralis} from "react-moralis";
 import Avatar from "./Avatar";
+import ChangeUsername from "./ChangeUsername";
 
 function Message({message}) {
     const { user } = useMoralis();
@@ -23,6 +24,15 @@ function Message({message}) {
         <p>{message.get('message')}</p>
         </div>
         {/*Timeago stamp */}
+        <p 
+        className={`absolute -bottom-5 text-xs ${
+            isUserMessage ? "text-blue-400": "text-pink-300"
+        }`}
+        
+        
+        >
+            {message.get('username')}
+        </p>
 
     </div>
   )
