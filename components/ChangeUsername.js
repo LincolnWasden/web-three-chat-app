@@ -15,11 +15,12 @@ const setUsername = () => {
        <button
        disabled={isUserUpdating}
        onClick={setUsername}
-        className="hover:text-pink-700">
+        className="hover:text-pink-700"
+        >
            Change your Username
        </button>
    </div>
-  )
+  );
 }
 
 export default ChangeUsername
