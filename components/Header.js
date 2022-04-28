@@ -23,7 +23,7 @@ function Header() {
              
              </div>  
                 {/*welcome message*/}
-                <h1 className="text-3xl">Welcome to the LinxHype Fam MetaVerse</h1>
+                <h1 className="text-3xl">Welcome to the LinxHype Fam</h1>
                 <h2 className="text-5xl font-bold truncate">{user.getUsername()}</h2>
               
                   {/*Change username component*/}
