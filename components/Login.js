@@ -35,7 +35,7 @@ function Login() {
          <button 
          onClick={authenticate}
          className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse">
-           Enter the MetaVerse</button>
+           Enter the Web 3 Chat App</button>
            <button
             onClick={needs}
     
