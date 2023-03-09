@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useMoralis } from "react-moralis";
+
 
 
 
@@ -7,17 +7,13 @@ function Login() {
   const {authenticate} = useMoralis();
   
   const handleLogin = async () => {
-    authenticate({
-      provider: "web3Auth",
-      clientId:
-       "BAm1i0JjKYqNf13q3ywWqJSYWnEXK1cFgOLtAAIE41ekgFbkMcNozUa_EFILfa4R0tjKPoWXIO1JwYa4-cf1mfU"
-    })
-
+    console.log("Congrats You're In");
+   
   };
  function needs(){
 
 
-   alert("You need to use Chrome and have MetaMask");
+   alert("You need to use Chrome");
  }
 
   return (
